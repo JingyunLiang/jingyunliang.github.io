@@ -39,6 +39,7 @@
           <td style="padding:20px;width:100%;vertical-align:middle">
             <heading>News</heading>
             <ul>
+              <li>2022-07-30: Three papers, including <a href="https://github.com/AHupuJR/EFNet">EFNet</a> (event-based image deblurring, oral), <a href="https://github.com/caojiezhang/DATSR">DATSR</a> (reference image SR) and <a href="https://github.com/caojiezhang/DAVSR">DAVSR</a> (video SR), accepted by ECCV2022.</font></li>
               <li>2022-06-10: Our new paper <a href="https://github.com/JingyunLiang/RVRT">RVRT</a> achieves SOTA video restoration results with balanced size, memory and runtime.</font></li>
               <li>2022-04-01: Our new paper <a href="https://github.com/cszn/SCUNet">SCUNet</a> achieves awesome denoising performance for real-world images.</font></li>
               <li>2022-01-28: Our new paper <a href="https://github.com/JingyunLiang/VRT">VRT</a> outperforms previous video SR/ deblurring/ denoising/ frame interpolation/ space-time video SR methods by up to <font size="2" face="verdana" color="red"> 2.16dB! </font></li>
@@ -68,8 +69,117 @@
 
 
 
+    <tr onmouseout="refnerf_stop()" onmouseover="refnerf_start()"">
+      <td style="padding:0px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='refnerf_image'><video  width=100% height=60% muted autoplay loop>
+          <source src="images/no.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/DAVSR.jpeg' width="160" height="90">
+        </div>
+        <script type="text/javascript">
+          function refnerf_start() {
+            document.getElementById('refnerf_image').style.opacity = "1";
+          }
 
+          function refnerf_stop() {
+            document.getElementById('refnerf_image').style.opacity = "0";
+          }
+          refnerf_stop()
+        </script>
+      </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+          <a href="https://github.com/caojiezhang/DAVSR">
+            <papertitle>Towards Interpretable Video Super-Resolution via Alternating Optimization</papertitle>
+          </a>
+          <br>
+          Jiezhang Cao, <strong>Jingyun Liang</strong>, Kai Zhang, Wenguan Wang, Qin Wang, Yulun Zhang, Hao Tang and Luc Van Gool
+          <br>
+          <em>European Conference on Computer Vision (<strong>ECCV</strong>)</em>, 2022
+          <br>
+          <a href="https://arxiv.org/pdf/2207.10765.pdf">arXiv</a> /
+          <a href="https://github.com/caojiezhang/DAVSR">code</a> /
+          <a href="data/default.bib">bibtex</a>
+          <p></p>
+          <p>An interpretable method based on alternating optimization. It takes low-framerate low-resolution blurry videos as inputs and can deal with video deblurring, frame interpolation and super-resolution problems in a joint way.</p>
+        </td>
+      </tr>
 
+    <tr onmouseout="refnerf_stop()" onmouseover="refnerf_start()"">
+      <td style="padding:0px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='refnerf_image'><video  width=100% height=60% muted autoplay loop>
+          <source src="images/no.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/DATSR.jpeg' width="160" height="90">
+        </div>
+        <script type="text/javascript">
+          function refnerf_start() {
+            document.getElementById('refnerf_image').style.opacity = "1";
+          }
+
+          function refnerf_stop() {
+            document.getElementById('refnerf_image').style.opacity = "0";
+          }
+          refnerf_stop()
+        </script>
+      </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+          <a href="https://github.com/caojiezhang/DATSR">
+            <papertitle>Reference-based Image Super-Resolution with Deformable Attention Transformer</papertitle>
+          </a>
+          <br>
+          Jiezhang Cao, <strong>Jingyun Liang</strong>, Kai Zhang, Yawei Li, Yulun Zhang, Wenguan Wang and Luc Van Gool
+          <br>
+          <em>European Conference on Computer Vision (<strong>ECCV</strong>)</em>, 2022
+          <br>
+          <a href="https://arxiv.org/pdf/2207.11938.pdf">arXiv</a> /
+          <a href="https://github.com/caojiezhang/DATSR">code</a> /
+          <a href="data/default.bib">bibtex</a>
+          <p></p>
+          <p>A reference-based image super-resolution Transformer with state-of-the-art performance. It consists of texture feature encoder module, reference-based deformable attention module and residual feature aggregation module.</p>
+        </td>
+      </tr>
+
+    <tr onmouseout="refnerf_stop()" onmouseover="refnerf_start()">
+      <td style="padding:0px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='refnerf_image'><video  width=100% height=100% muted autoplay loop>
+          <source src="images/no.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/MEFNet.jpg' width="160">
+        </div>
+        <script type="text/javascript">
+          function refnerf_start() {
+            document.getElementById('refnerf_image').style.opacity = "1";
+          }
+
+          function refnerf_stop() {
+            document.getElementById('refnerf_image').style.opacity = "0";
+          }
+          refnerf_stop()
+        </script>
+      </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+          <a href="https://arxiv.org/pdf/2112.00167.pdf">
+            <papertitle>Event-Based Fusion for Motion Deblurring with Cross-modal Attention</papertitle>
+          </a>
+          <br>
+                Lei Sun, Christos Sakaridis, <strong>Jingyun Liang</strong>, Qi Jiang, Kailun Yang, Peng Sun, Yaozu Ye, Kaiwei Wang and Luc Van Gool
+          <br>
+          <em>European Conference on Computer Vision (<strong>ECCV</strong>)</em>, 2022
+          <br>
+          <a href="https://arxiv.org/pdf/2112.00167.pdf">arXiv</a> /
+          <a href="https://github.com/AHupuJR/EFNet">code</a> /
+          <a href="https://github.com/AHupuJR/EFNet">dataset</a> /
+          <a href="data/default.bib">bibtex</a>
+          <p></p>
+          <p>An unfolded end-to-end event camera-based motion deblurring method; a High-Quality Blur (HQBlur) dataset for event camera-based deblurring.</p>
+        </td>
+      </tr>
 
     <tr onmouseout="refnerf_stop()" onmouseover="refnerf_start()" bgcolor="#ffffd0">
       <td style="padding:0px;width:25%;vertical-align:middle">
@@ -106,7 +216,6 @@
           <p>A transformer-based model that jointly extracts, aligns, and fuses frame features at multiple scales; state-of-the-art performance in video SR/ deblurring/ denoising.</p>
         </td>
       </tr>
-
 
     <tr onmouseout="refnerf_stop()" onmouseover="refnerf_start()"">
       <td style="padding:0px;width:25%;vertical-align:middle">
@@ -179,44 +288,6 @@
           <a href="data/default.bib">bibtex</a>
           <p></p>
           <p>A transformer-based model that jointly extracts, aligns, and fuses frame features at multiple scales; state-of-the-art performance in video SR/ deblurring/ denoising/ frame interpolation/ space-time video SR.</p>
-        </td>
-      </tr>
-
-    <tr onmouseout="refnerf_stop()" onmouseover="refnerf_start()">
-      <td style="padding:0px;width:25%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='refnerf_image'><video  width=100% height=100% muted autoplay loop>
-          <source src="images/no.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div>
-          <img src='images/MEFNet.jpg' width="160">
-        </div>
-        <script type="text/javascript">
-          function refnerf_start() {
-            document.getElementById('refnerf_image').style.opacity = "1";
-          }
-
-          function refnerf_stop() {
-            document.getElementById('refnerf_image').style.opacity = "0";
-          }
-          refnerf_stop()
-        </script>
-      </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-          <a href="https://arxiv.org/pdf/2112.00167.pdf">
-            <papertitle>Event-Based Fusion for Motion Deblurring with Cross-modal Attention</papertitle>
-          </a>
-          <br>
-                Lei Sun, Christos Sakaridis, <strong>Jingyun Liang</strong>, Qi Jiang, Kailun Yang, Peng Sun, Yaozu Ye, Kaiwei Wang and Luc Van Gool
-          <br>
-    <em>arxiv</em>, 2021
-          <br>
-          <a href="https://arxiv.org/pdf/2112.00167.pdf">arXiv</a> /
-          code (coming soon)</a> /
-          dataset (coming soon)</a> /
-          <a href="data/default.bib">bibtex</a>
-          <p></p>
-          <p>An unfolded end-to-end event camera-based motion deblurring method; a High-Quality Blur (HQBlur) dataset for event camera-based deblurring.</p>
         </td>
       </tr>
 
